@@ -1,6 +1,6 @@
 <div class="header-main">
 					<div class="logo-w3-agile">
-								<h1><a href="dashboard.php">Starship Voyages</a></h1>
+								<h1><a href="dashboard.php">Starship Voyagers</a></h1>
 								<!-- <h3><a href="dashboard.php">Administrator</a></h3> -->
 							</div>
 				
