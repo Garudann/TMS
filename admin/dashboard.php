@@ -39,7 +39,7 @@ else{
 <?php include('includes/header.php');?>
 <!--header end here-->
 		<ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a> <i class="fa fa-angle-right"></i></li>
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a> <i class="fa fa-angle-right"></i></li>
             </ol>
 <!--four-grids here-->
 		<div class="four-grids">
@@ -50,6 +50,7 @@ else{
 							</div>
 							<div class="four-text">
 								<h3>Users</h3>
+								<a href="manage-users.php">list</a>
 
 								<?php $sql = "SELECT id from tblusers";
 $query = $dbh -> prepare($sql);
@@ -70,6 +71,7 @@ $cnt=$query->rowCount();
 							</div>
 							<div class="four-text">
 								<h3>Bookings</h3>
+								<a href="manage-bookings.php">list</a>
 										<?php $sql1 = "SELECT BookingId from tblbooking";
 $query1 = $dbh -> prepare($sql1);
 $query1->execute();
@@ -89,6 +91,7 @@ $cnt1=$query1->rowCount();
 							</div>
 							<div class="four-text">
 								<h3>Enquires</h3>
+								<a href="manage-enquires.php">list</a>
 												<?php $sql2 = "SELECT id from tblenquiry";
 $query2= $dbh -> prepare($sql2);
 $query2->execute();
@@ -108,6 +111,7 @@ $cnt2=$query2->rowCount();
 							</div>
 							<div class="four-text">
 								<h3>Total packages</h3>
+								<a href="manage-packages.php">list</a>
 																	<?php $sql3 = "SELECT PackageId from tbltourpackages";
 $query3= $dbh -> prepare($sql3);
 $query3->execute();
@@ -131,6 +135,7 @@ $cnt3=$query3->rowCount();
 							</div>
 							<div class="four-text">
 								<h3>Issues Raised</h3>
+								<a href="manageissues.php">list</a>
 												<?php $sql5 = "SELECT id from tblissues";
 $query5= $dbh -> prepare($sql5);
 $query5->execute();
