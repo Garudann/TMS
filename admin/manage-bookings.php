@@ -116,7 +116,7 @@ $msg="Booking Confirm successfully";
 				</div>
 <!--heder end here-->
 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Manage Bookings</li>
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Manage Bookings</li>
             </ol>
 <div class="agile-grids">	
 				<!-- tables -->
@@ -180,7 +180,7 @@ echo "Canceled by User at " .$result->upddate;
 {
 	?><td>Cancelled</td>
 <?php } else {?>
-<td><a href="manage-bookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> / <a href="manage-bookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Confirm</a></td>
+<td><a href="manage-bookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> / <a href="manage-bookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to confirm booking')" >Confirm</a></td>
 <?php }?>
 
 						  </tr>

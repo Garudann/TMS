@@ -57,12 +57,12 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
 		<form  method="post">
 			<div class="username">
 				<span class="username">Username:</span>
-				<input type="text" name="username" class="name" placeholder="" required="">
+				<input type="text" name="username" class="name" placeholder="" required="" autocomplete="off">
 				<div class="clearfix"></div>
 			</div>
 			<div class="password-agileits">
 				<span class="username">Password:</span>
-				<input type="password" name="password" class="password" placeholder="" required="">
+				<input type="password" name="password" class="password" placeholder="" required="" autocomplete="off">
 				<div class="clearfix"></div>
 			</div>
 			
