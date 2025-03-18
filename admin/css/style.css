@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5 {
     	font-family: 'Montserrat', sans-serif;
 }
 a {
-  color: #008DE7;
+  color: rgb(254, 254, 254);
   font-weight:400;
 }
 a:hover { transition: all 200ms ease-in-out; }
