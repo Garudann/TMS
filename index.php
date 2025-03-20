@@ -20,6 +20,7 @@ include('includes/config.php');
 <!-- Custom Theme files -->
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 <!--animate-->
 <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
 <script src="js/wow.min.js"></script>
@@ -112,7 +113,7 @@ foreach($results as $result)
 					<p><b>Features</b> <?php echo htmlentities($result->PackageFetures);?></p>
 				</div>
 				<div class="col-md-3 room-right wow fadeInRight animated" data-wow-delay=".5s">
-					<h5>USD <?php echo htmlentities($result->PackagePrice);?></h5>
+					<h5>USD <?php echo htmlentities($result->PackagePrice);?><i class="fa-solid fa-user"></i></h5>
 					<a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>" class="view">Details</a>
 				</div>
 				<div class="clearfix"></div>
