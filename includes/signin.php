@@ -13,6 +13,7 @@ $results=$query->fetchAll(PDO::FETCH_OBJ);
 if($query->rowCount() > 0)
 {
 $_SESSION['login']=$_POST['email'];
+echo "<script>alert('Login Success!!');</script>";
 echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
 } else{
 	
@@ -43,7 +44,7 @@ echo "<script type='text/javascript'> document.location = 'index.php'; </script>
 									<div class="login-right">
 										<form method="post">
 											<h3>Signin with your account </h3>
-	<input type="text" name="email" id="email" placeholder="Enter your Email"  required="">	
+	<input type="text" name="email" id="email" placeholder="Enter your Email"  required="" autocomplete="off">	
 	<input type="password" name="password" id="password" placeholder="Password" value="" required="">	
 											<h4><a href="forgot-password.php">Forgot password</a></h4>
 											
