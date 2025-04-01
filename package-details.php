@@ -22,6 +22,7 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
+echo "<script>alert('Booked Successfully');</script>";
 $msg="Booked Successfully";
 }
 else 
