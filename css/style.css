@@ -1382,6 +1382,7 @@ li.spe {
 }
 li.spe  input[type="text"] {
     width: 100%;
+    color: #000;
 }
 /*-- write --*/
 .writ input[type="text"] {
