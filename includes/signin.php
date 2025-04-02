@@ -13,11 +13,11 @@ $results=$query->fetchAll(PDO::FETCH_OBJ);
 if($query->rowCount() > 0)
 {
 $_SESSION['login']=$_POST['email'];
-echo "<script>alert('Login Success!!');</script>";
+echo "<script>alert('Login Success!');</script>";
 echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
 } else{
 	
-	echo "<script>alert('Invalid Details');</script>";
+	echo "<script>alert('Invalid Usename or Password!');</script>";
 
 } 
 
