@@ -107,7 +107,7 @@ if($query->rowCount() > 0)
 foreach($results as $result)
 {	?>
 
-<form name="book" method="post">
+<form name="book" method="post" onsubmit="confirmSubmission(event)">
 		<div class="selectroom_top">
 			<div class="col-md-4 selectroom_left wow fadeInLeft animated" data-wow-delay=".5s">
 				<img src="admin/pacakgeimages/<?php echo htmlentities($result->PackageImage);?>" class="img-responsive" alt="">
@@ -161,6 +161,17 @@ foreach($results as $result)
 			</div>
 			
 		</div>
+		<!-- <script>
+			function confirmSubmission(event) {
+            event.preventDefault(); // Prevent form submission
+            const userConfirmation = confirm("Do you want to submit?");
+            if (userConfirmation) {
+                document.getElementById('bookingForm').submit(); // Submit the form if confirmed
+            } else {
+                alert("Form not submitted.");
+            }
+        }
+		</script> -->
 		</form>
 <?php }} ?>
 
