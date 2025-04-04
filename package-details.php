@@ -164,11 +164,11 @@ foreach($results as $result)
 		<script>
 			function confirmSubmission(event) {
             event.preventDefault(); // Prevent form submission
-            const userConfirmation = confirm("Do you want to submit?");
+            const userConfirmation = confirm("Do you want to Book?");
             if (userConfirmation) {
                 document.getElementById('bookingForm').submit(); // Submit the form if confirmed
             } else {
-                alert("Form not submitted.");
+                alert("Booking cancelled!");
             }
         }
 		</script>
