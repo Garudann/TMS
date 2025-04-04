@@ -161,7 +161,7 @@ foreach($results as $result)
 			</div>
 			
 		</div>
-		<!-- <script>
+		<script>
 			function confirmSubmission(event) {
             event.preventDefault(); // Prevent form submission
             const userConfirmation = confirm("Do you want to submit?");
@@ -171,7 +171,7 @@ foreach($results as $result)
                 alert("Form not submitted.");
             }
         }
-		</script> -->
+		</script>
 		</form>
 <?php }} ?>
 
