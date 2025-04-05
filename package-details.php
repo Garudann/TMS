@@ -166,7 +166,7 @@ foreach($results as $result)
             event.preventDefault(); // Prevent form submission
             const userConfirmation = confirm("Do you want to Book?");
             if (userConfirmation) {
-                document.getElementById('bookingForm').submit(); // Submit the form if confirmed
+                document.getElementById('bookingForm').submit2(); // Submit the form if confirmed
             } else {
                 alert("Booking cancelled!");
             }
